@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// このコントローラーで使用したいモデルがあれば随時追加していく？
+
 use App\Article;
 
 class ArticlesController extends Controller
@@ -38,7 +38,6 @@ class ArticlesController extends Controller
     public function store(Request $request)
     {
         $article = new Article;
-
         $article->title = $request->title;
         $article->body = $request->body;
 

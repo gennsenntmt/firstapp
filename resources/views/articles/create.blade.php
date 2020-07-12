@@ -37,7 +37,6 @@
   float: right;
 }
 
-
 </style>
 
 @section('content')
